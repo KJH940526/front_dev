@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/rect.js"></script>
+<script type="text/javascript">
+let x1 = (Math.floor((Math.random())*100))
+let x2 = (Math.floor((Math.random())*100))
+let x3 = (Math.floor((Math.random())*500))
+let x4 = (Math.floor((Math.random())*500))
+window.onload = function () {
+	const r1 = new Rect(x1, x2, x3, x4, 'rgb(255,0,0)');
+	r1.show()
+	const r2 = new Rect(200, 200, 400, 300, '#00f');
+	r2.show()
+}
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
