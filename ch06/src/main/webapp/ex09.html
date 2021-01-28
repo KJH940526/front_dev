@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+
+<script type="text/javascript">
+window.addEventListener('load', function() {
+	
+	// ID 까쪄오끼
+	let header01 = document.getElementById('header-01')
+	let header02 = document.getElementById('header-02')
+	
+	//2. Tag Name으로 가져오기
+	let h3s = document.getElementsByTagName('h3')
+	
+	//3. Class Name으로 가져오기
+	let h4s = document.getElementsByClassName('header')
+	
+	//4. CSS 썬턖짜로 까쪄오끼(HTML5)
+	let header07 = document.querySelector("#header-07");
+	let h5s = document.querySelectorAll(".header2");
+	
+	setTimeout(() => {
+		console.log(header01+ " ")
+		console.log(document + " ")
+		header01.innerText = 'by getElementByID()';
+		header02.innerText = 'by getElementByID()';
+		
+		h3s[0].innerText = 'by 태그네임'
+		h3s[1].innerText = 'by 태그네임'
+		
+		h4s[0].innerText = 'by 클래스네임'
+		h4s[1].innerText = 'by 클래스네임'
+		
+		
+		header07.innerText = 'by 쿼리셀렉터(#id)'
+		h5s[1].innerText = 'by 쿼리셀렉터올(.class)'
+		
+	}, 2000);
+})
+</script>
+
+
+</head>
+<body>
+	<h1>HTMLElement 가져오기(Select)</h1>
+	
+	<h2 id='header-01'>Header 01</h2>
+	<h2 id='header-02'>Header 02</h2>
+	
+	<h3>Header 03</h3>
+	<h3>Header 04</h3>
+	
+	<h4 class='header'>Header 05</h4>
+	<h4 class='header'>Header 06</h4>
+	
+	<h5 id= 'header-07' class='header2'>Header 07</h5>
+	<h5 id= 'header-08' class='header2'>Header 08</h5>
+	
+</body>
+</html>
