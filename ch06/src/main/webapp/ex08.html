@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+
+<script type="text/javascript">
+window.addEventListener('load', function() {
+	var imgEl = document.createElement('img');
+	
+	// 표준 + 비표준 속성을 접근하기 setAttribute 함수를 사용한다.
+	imgEl.setAttribute('src','https://ww.namu.la/s/aff51c0e9bd97291d5a6eb6def3006f2cf0a36992780af9333d023ba1af55a281440d1747e9fbbd67ddad5cca1409a72c32e212b917ffd62cf5cd8c3cd5650bce09ea5f28efda35f03b44cca2e7e5b3b009a3005b9520ee7480830783f5cb6a1')
+	imgEl.setAttribute('width', 400);
+	imgEl.setAttribute('alt', '둘리일당들~');
+	imgEl.setAttribute('title', '나쁜둘리');
+	imgEl.setAttribute('data-name', '건방진둘리');
+	
+	setTimeout(() => {
+		document.body.appendChild(imgEl);	
+	}, 2000);
+})
+</script>
+
+
+</head>
+<body>
+	<h1>HTMLElement 속성 조작하기</h1>
+</body>
+</html>

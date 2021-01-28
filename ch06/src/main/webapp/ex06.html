@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.addEventListener('load', function(){
+	console.log("!")
+	let h1El = document.createElement('h1');
+	console.log(typeof(h1El) + ":" + (h1El instanceof HTMLElement) + ":" + h1El)
+	console.log(h1El+ " ")
+	console.log(HTMLHeadingElement)
+	
+	let textNode = document.createTextNode("하이 DOM");
+	h1El.append(textNode);
+	
+	setTimeout(() => {
+		document.body.appendChild(h1El);	
+	}, 2000);
+	
+});
+/*
+window.onload = function(){
+	console.log("1"); //이런식으로 해도됨!
+}
+*/
+</script>
+</head>
+<body>
+	<h1>HTMLElement(DOM Node) 만들기01</h1>
+</body>
+</html>
