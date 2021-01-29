@@ -21,8 +21,9 @@ $(function(){
 	let blink = false;
 	setInterval(() => {
 		$('#heart').css('color',(blink ? 'red' : 'white'));
-		blink = !blink;
-	}, 500);
+		blink = !blink; //깜빡임을 주기위해서 false를 true로 true를 false로
+		console.log(blink)
+	}, 3000);
 });
 </script>
 </head>
@@ -40,16 +41,17 @@ $(function(){
 	&quot;
 	
 	HTML symbol 문자
+	symbols
 	&alpha;
 	&beta;
 	&pi;
-	
 	&trade;
 	&reg;
 	&copy;
-	
-	
-	&heartsuit; -->   <!-- 이런식으로 써야지 css를 적용할 수 있으므로 이런식으 쓰자! -->
+	&heartsuit;
+	&spadesuit;
+	&clubsuit;
+	 -->   <!-- 이런식으로 써야지 css를 적용할 수 있으므로 이런식으 쓰자! -->
 	
 	<h2>Blakc &amp; White</h2>
 	<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that</h2>
